@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoodWorkz — Interieurbouw, Onderhoud & Reparaties</title>
+    <meta name="description" content="WoodWorkz is uw specialist in interieurbouw, onderhoud en reparaties. Vakmanschap met oog voor detail.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="images/logo.svg" alt="WoodWorkz logo" class="nav__logo-img">
+                <span class="nav__logo-text">WoodWorkz</span>
+            </a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Menu openen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#diensten" class="nav__link">Diensten</a></li>
+                <li><a href="#over-ons" class="nav__link">Over ons</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero__content">
+            <h1 class="hero__title">Vakmanschap<br>in hout</h1>
+            <p class="hero__subtitle">Interieurbouw, onderhoud en reparaties — met oog voor detail en liefde voor het vak.</p>
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--primary">Neem contact op</a>
+                <a href="#diensten" class="btn btn--outline">Onze diensten</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="diensten">
+        <div class="container">
+            <h2 class="section__title">Onze Diensten</h2>
+            <p class="section__subtitle">Van maatwerk interieurbouw tot onderhoud en reparaties — wij leveren kwaliteit op elk niveau.</p>
+
+            <div class="services__grid">
+
+                <!-- Service 1: Interieurbouw -->
+                <article class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="28" width="48" height="4" rx="1" fill="currentColor"/>
+                            <rect x="12" y="32" width="4" height="24" rx="1" fill="currentColor"/>
+                            <rect x="48" y="32" width="4" height="24" rx="1" fill="currentColor"/>
+                            <rect x="14" y="8" width="36" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <line x1="24" y1="8" x2="24" y2="28" stroke="currentColor" stroke-width="2"/>
+                            <line x1="40" y1="8" x2="40" y2="28" stroke="currentColor" stroke-width="2"/>
+                            <line x1="14" y1="18" x2="50" y2="18" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Interieurbouw</h3>
+                    <p class="service-card__text">
+                        Wij ontwerpen en realiseren maatwerk interieuoplossingen die perfect aansluiten
+                        bij uw wensen en ruimte. Van inbouwkasten en wandmeubels tot complete
+                        keukeninterieus en kantoorinrichtingen. Elk project wordt met precisie en
+                        vakmanschap uitgevoerd, waarbij we alleen werken met hoogwaardige materialen.
+                    </p>
+                    <ul class="service-card__list">
+                        <li>Maatwerk kasten en meubels</li>
+                        <li>Keuken- en badkamerinterieur</li>
+                        <li>Kantoor- en winkelinrichting</li>
+                        <li>Wand- en plafondafwerking</li>
+                    </ul>
+                </article>
+
+                <!-- Service 2: Onderhoud -->
+                <article class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 8C18.7 8 8 18.7 8 32s10.7 24 24 24 24-10.7 24-24S45.3 8 32 8z" stroke="currentColor" stroke-width="3" fill="none"/>
+                            <path d="M32 16v16l11 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Onderhoud</h3>
+                    <p class="service-card__text">
+                        Regelmatig onderhoud verlengt de levensduur van uw houten interieur en houdt
+                        het er als nieuw uit zien. Wij bieden onderhoudscontracten en losse
+                        onderhoudsbeurten voor al uw houtwerk. Van het bijwerken van laklagen tot
+                        het behandelen van vocht- en slijtplekken.
+                    </p>
+                    <ul class="service-card__list">
+                        <li>Periodiek houtonderhoud</li>
+                        <li>Lak- en beitswerk</li>
+                        <li>Vochtbestrijding en preventie</li>
+                        <li>Onderhoudscontracten</li>
+                    </ul>
+                </article>
+
+                <!-- Service 3: Reparaties -->
+                <article class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 8l-4 16 12-8-12-8z" fill="currentColor"/>
+                            <rect x="18" y="24" width="6" height="32" rx="2" fill="currentColor" transform="rotate(-15 21 40)"/>
+                            <path d="M44 8l4 16-12-8 12-8z" fill="currentColor"/>
+                            <rect x="40" y="24" width="6" height="32" rx="2" fill="currentColor" transform="rotate(15 43 40)"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Reparaties</h3>
+                    <p class="service-card__text">
+                        Beschadigingen aan houtwerk? Wij repareren snel en vakkundig alle soorten
+                        schade aan uw interieur. Of het nu gaat om een beschadigde deur, een
+                        kapotte kast of versleten kozijnen — wij herstellen het alsof er niets
+                        gebeurd is. Geen klus is ons te klein of te groot.
+                    </p>
+                    <ul class="service-card__list">
+                        <li>Deur- en kozijnreparatie</li>
+                        <li>Meubel- en kastherstel</li>
+                        <li>Vloer- en traprestauratie</li>
+                        <li>Noodreparaties mogelijk</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="over-ons">
+        <div class="container about__content">
+            <div class="about__text">
+                <h2 class="section__title section__title--left">Over WoodWorkz</h2>
+                <p>
+                    WoodWorkz staat voor ambachtelijk vakmanschap en persoonlijke service. Met jarenlange
+                    ervaring in de houtbewerking combineren wij traditionele technieken met moderne
+                    oplossingen. Elk project, groot of klein, behandelen wij met dezelfde toewijding
+                    en zorgvuldigheid.
+                </p>
+                <p>
+                    Wij geloven dat kwaliteitswerk begint bij goed luisteren. Daarom nemen wij de tijd
+                    om uw wensen te begrijpen en vertalen deze naar een resultaat dat uw verwachtingen
+                    overtreft. Van het eerste gesprek tot de oplevering — u kunt op ons rekenen.
+                </p>
+                <div class="about__stats">
+                    <div class="about__stat">
+                        <span class="about__stat-number">15+</span>
+                        <span class="about__stat-label">Jaar ervaring</span>
+                    </div>
+                    <div class="about__stat">
+                        <span class="about__stat-number">500+</span>
+                        <span class="about__stat-label">Projecten</span>
+                    </div>
+                    <div class="about__stat">
+                        <span class="about__stat-number">100%</span>
+                        <span class="about__stat-label">Maatwerk</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about__visual">
+                <div class="about__logo-showcase">
+                    <img src="images/logo.svg" alt="WoodWorkz" class="about__logo-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__subtitle">Heeft u een vraag of wilt u een vrijblijvende offerte? Neem gerust contact met ons op.</p>
+
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <h3>Contactgegevens</h3>
+
+                    <div class="contact__item">
+                        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <div>
+                            <strong>E-mail</strong>
+                            <a href="mailto:woodwork@woodworkz.nl">woodwork@woodworkz.nl</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <div>
+                            <strong>Locatie</strong>
+                            <span>Nederland</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <div>
+                            <strong>Bereikbaarheid</strong>
+                            <span>Ma – Vr: 08:00 – 17:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form" id="contact-form">
+                    <h3>Informatieformulier</h3>
+                    <div class="form__group">
+                        <label for="naam">Naam *</label>
+                        <input type="text" id="naam" name="naam" required placeholder="Uw volledige naam">
+                    </div>
+                    <div class="form__group">
+                        <label for="email">E-mailadres *</label>
+                        <input type="email" id="email" name="email" required placeholder="uw@email.nl">
+                    </div>
+                    <div class="form__group">
+                        <label for="telefoon">Telefoonnummer</label>
+                        <input type="tel" id="telefoon" name="telefoon" placeholder="06 - 12345678">
+                    </div>
+                    <div class="form__group">
+                        <label for="dienst">Gewenste dienst</label>
+                        <select id="dienst" name="dienst">
+                            <option value="">Selecteer een dienst</option>
+                            <option value="interieurbouw">Interieurbouw</option>
+                            <option value="onderhoud">Onderhoud</option>
+                            <option value="reparaties">Reparaties</option>
+                            <option value="anders">Anders</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="bericht">Uw bericht *</label>
+                        <textarea id="bericht" name="bericht" rows="5" required placeholder="Beschrijf uw project of vraag..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Verstuur bericht</button>
+                    <div class="form__feedback" id="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="footer__brand">
+                <img src="images/logo.svg" alt="WoodWorkz" class="footer__logo">
+                <span class="footer__name">WoodWorkz</span>
+            </div>
+            <p class="footer__copy">&copy; 2026 WoodWorkz. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

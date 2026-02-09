@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Stylized hammer for WoodWorkz -->
+
+  <!-- Hammer head -->
+  <rect x="60" y="38" width="80" height="34" rx="5" fill="#C8782A" stroke="#8B4513" stroke-width="3"/>
+
+  <!-- Hammer head left face (claw side) -->
+  <path d="M60 42 L48 38 L46 50 L60 55 Z" fill="#B06820" stroke="#8B4513" stroke-width="2"/>
+
+  <!-- Hammer head right face (flat striking face) -->
+  <rect x="140" y="40" width="8" height="30" rx="2" fill="#B06820" stroke="#8B4513" stroke-width="2"/>
+
+  <!-- Hammer handle -->
+  <rect x="92" y="72" width="16" height="90" rx="4" fill="#DEB887" stroke="#8B4513" stroke-width="2.5"/>
+
+  <!-- Handle grip lines (detail) -->
+  <line x1="94" y1="130" x2="106" y2="130" stroke="#C8A06A" stroke-width="1.5"/>
+  <line x1="94" y1="136" x2="106" y2="136" stroke="#C8A06A" stroke-width="1.5"/>
+  <line x1="94" y1="142" x2="106" y2="142" stroke="#C8A06A" stroke-width="1.5"/>
+  <line x1="94" y1="148" x2="106" y2="148" stroke="#C8A06A" stroke-width="1.5"/>
+
+  <!-- Wood grain on handle -->
+  <path d="M96 76 Q100 95 98 115" stroke="#C8A06A" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M102 76 Q104 95 101 120" stroke="#C8A06A" stroke-width="1" fill="none" opacity="0.6"/>
+
+  <!-- Hammer head shine/highlight -->
+  <rect x="70" y="42" width="25" height="4" rx="2" fill="#E0A050" opacity="0.5"/>
+
+  <!-- Small nail accent -->
+  <circle cx="100" cy="55" r="4" fill="#8B4513"/>
+  <circle cx="100" cy="55" r="2" fill="#A0522D"/>
+</svg>
