@@ -1,32 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <!-- Stylized hammer for WoodWorkz -->
+  <!-- WoodWorkz Logo: Double W with hammer and saw -->
 
-  <!-- Hammer head -->
-  <rect x="60" y="38" width="80" height="34" rx="5" fill="#C8782A" stroke="#8B4513" stroke-width="3"/>
+  <!-- Left W -->
+  <path d="M12 55 L24 135 L36 85 L48 135 L60 55"
+        stroke="#C8782A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 
-  <!-- Hammer head left face (claw side) -->
-  <path d="M60 42 L48 38 L46 50 L60 55 Z" fill="#B06820" stroke="#8B4513" stroke-width="2"/>
+  <!-- Right W -->
+  <path d="M140 55 L152 135 L164 85 L176 135 L188 55"
+        stroke="#C8782A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 
-  <!-- Hammer head right face (flat striking face) -->
-  <rect x="140" y="40" width="8" height="30" rx="2" fill="#B06820" stroke="#8B4513" stroke-width="2"/>
-
+  <!-- Hammer (centered, between the two W's, angled) -->
   <!-- Hammer handle -->
-  <rect x="92" y="72" width="16" height="90" rx="4" fill="#DEB887" stroke="#8B4513" stroke-width="2.5"/>
+  <line x1="88" y1="130" x2="112" y2="58" stroke="#DEB887" stroke-width="7" stroke-linecap="round"/>
+  <!-- Handle grip lines -->
+  <line x1="90" y1="122" x2="86" y2="124" stroke="#C8A06A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="91" y1="116" x2="87" y2="118" stroke="#C8A06A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="92" y1="110" x2="88" y2="112" stroke="#C8A06A" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Hammer head -->
+  <rect x="96" y="46" width="36" height="16" rx="3" fill="#8B4513" transform="rotate(-24 114 54)"/>
+  <!-- Hammer head highlight -->
+  <rect x="100" y="49" width="18" height="4" rx="2" fill="#A0622D" opacity="0.6" transform="rotate(-24 114 54)"/>
 
-  <!-- Handle grip lines (detail) -->
-  <line x1="94" y1="130" x2="106" y2="130" stroke="#C8A06A" stroke-width="1.5"/>
-  <line x1="94" y1="136" x2="106" y2="136" stroke="#C8A06A" stroke-width="1.5"/>
-  <line x1="94" y1="142" x2="106" y2="142" stroke="#C8A06A" stroke-width="1.5"/>
-  <line x1="94" y1="148" x2="106" y2="148" stroke="#C8A06A" stroke-width="1.5"/>
+  <!-- Saw (diagonal, crossing the hammer to form an X) -->
+  <!-- Saw blade -->
+  <line x1="112" y1="130" x2="88" y2="58" stroke="#A0A0A0" stroke-width="5" stroke-linecap="round"/>
+  <!-- Saw teeth along the blade -->
+  <path d="M110 125 L114 122 L108 119 L112 116 L106 113 L110 110 L104 107 L108 104 L102 101 L106 98 L100 95 L104 92 L98 89 L102 86 L96 83 L100 80 L94 77 L98 74 L92 71 L96 68 L90 65 L94 62"
+        stroke="#B0B0B0" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <!-- Saw handle -->
+  <ellipse cx="112" cy="134" rx="9" ry="6" fill="#DEB887" stroke="#8B4513" stroke-width="1.5" transform="rotate(-24 112 134)"/>
+  <ellipse cx="112" cy="134" rx="5" ry="3" fill="none" stroke="#8B4513" stroke-width="1" transform="rotate(-24 112 134)"/>
 
-  <!-- Wood grain on handle -->
-  <path d="M96 76 Q100 95 98 115" stroke="#C8A06A" stroke-width="1" fill="none" opacity="0.6"/>
-  <path d="M102 76 Q104 95 101 120" stroke="#C8A06A" stroke-width="1" fill="none" opacity="0.6"/>
-
-  <!-- Hammer head shine/highlight -->
-  <rect x="70" y="42" width="25" height="4" rx="2" fill="#E0A050" opacity="0.5"/>
-
-  <!-- Small nail accent -->
-  <circle cx="100" cy="55" r="4" fill="#8B4513"/>
-  <circle cx="100" cy="55" r="2" fill="#A0522D"/>
+  <!-- Subtle shadow under tools -->
+  <ellipse cx="100" cy="148" rx="30" ry="4" fill="#8B4513" opacity="0.15"/>
 </svg>
