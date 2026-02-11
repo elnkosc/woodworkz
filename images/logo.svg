@@ -1,36 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <!-- WoodWorkz Logo: Double W with hammer and saw -->
+  <defs>
+    <!-- Modern gradient for the W letters -->
+    <linearGradient id="wGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4903C"/>
+      <stop offset="100%" stop-color="#A0611A"/>
+    </linearGradient>
+    <!-- Metallic gradient for hammer head -->
+    <linearGradient id="metalGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6B6B6B"/>
+      <stop offset="50%" stop-color="#9A9A9A"/>
+      <stop offset="100%" stop-color="#5A5A5A"/>
+    </linearGradient>
+    <!-- Steel gradient for saw blade -->
+    <linearGradient id="sawGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B8B8B8"/>
+      <stop offset="100%" stop-color="#787878"/>
+    </linearGradient>
+    <!-- Handle gradient -->
+    <linearGradient id="handleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C49A6C"/>
+      <stop offset="50%" stop-color="#E0BFA0"/>
+      <stop offset="100%" stop-color="#B8885A"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Left W -->
-  <path d="M12 55 L24 135 L36 85 L48 135 L60 55"
-        stroke="#C8782A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- === Left W — clean geometric strokes === -->
+  <path d="M16 58 L30 138 L44 88 L58 138 L72 58"
+        stroke="url(#wGrad)" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
 
-  <!-- Right W -->
-  <path d="M140 55 L152 135 L164 85 L176 135 L188 55"
-        stroke="#C8782A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- === Right W === -->
+  <path d="M128 58 L142 138 L156 88 L170 138 L184 58"
+        stroke="url(#wGrad)" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
 
-  <!-- Hammer (centered, between the two W's, angled) -->
-  <!-- Hammer handle -->
-  <line x1="88" y1="130" x2="112" y2="58" stroke="#DEB887" stroke-width="7" stroke-linecap="round"/>
-  <!-- Handle grip lines -->
-  <line x1="90" y1="122" x2="86" y2="124" stroke="#C8A06A" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="91" y1="116" x2="87" y2="118" stroke="#C8A06A" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="92" y1="110" x2="88" y2="112" stroke="#C8A06A" stroke-width="1.5" stroke-linecap="round"/>
-  <!-- Hammer head -->
-  <rect x="96" y="46" width="36" height="16" rx="3" fill="#8B4513" transform="rotate(-24 114 54)"/>
-  <!-- Hammer head highlight -->
-  <rect x="100" y="49" width="18" height="4" rx="2" fill="#A0622D" opacity="0.6" transform="rotate(-24 114 54)"/>
+  <!-- === Hammer — minimal flat style, angled 30deg === -->
+  <g transform="rotate(-30 100 100)">
+    <!-- Handle -->
+    <rect x="96" y="68" width="8" height="82" rx="2" fill="url(#handleGrad)"/>
+    <!-- Head -->
+    <rect x="78" y="54" width="44" height="18" rx="2" fill="url(#metalGrad)"/>
+    <!-- Head bevel line -->
+    <line x1="80" y1="63" x2="120" y2="63" stroke="#4A4A4A" stroke-width="0.8" opacity="0.4"/>
+    <!-- Striking face accent -->
+    <rect x="119" y="56" width="3" height="14" rx="1" fill="#4A4A4A" opacity="0.3"/>
+  </g>
 
-  <!-- Saw (diagonal, crossing the hammer to form an X) -->
-  <!-- Saw blade -->
-  <line x1="112" y1="130" x2="88" y2="58" stroke="#A0A0A0" stroke-width="5" stroke-linecap="round"/>
-  <!-- Saw teeth along the blade -->
-  <path d="M110 125 L114 122 L108 119 L112 116 L106 113 L110 110 L104 107 L108 104 L102 101 L106 98 L100 95 L104 92 L98 89 L102 86 L96 83 L100 80 L94 77 L98 74 L92 71 L96 68 L90 65 L94 62"
-        stroke="#B0B0B0" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-  <!-- Saw handle -->
-  <ellipse cx="112" cy="134" rx="9" ry="6" fill="#DEB887" stroke="#8B4513" stroke-width="1.5" transform="rotate(-24 112 134)"/>
-  <ellipse cx="112" cy="134" rx="5" ry="3" fill="none" stroke="#8B4513" stroke-width="1" transform="rotate(-24 112 134)"/>
+  <!-- === Saw — flat geometric style, angled +30deg === -->
+  <g transform="rotate(30 100 100)">
+    <!-- Blade body -->
+    <rect x="94" y="54" width="10" height="80" rx="1" fill="url(#sawGrad)"/>
+    <!-- Saw teeth (clean triangular) -->
+    <path d="M94 58 L89 62 L94 66 L89 70 L94 74 L89 78 L94 82 L89 86 L94 90 L89 94 L94 98 L89 102 L94 106 L89 110 L94 114 L89 118 L94 122 L89 126 L94 130"
+          stroke="#888" stroke-width="1.2" fill="none" stroke-linejoin="miter"/>
+    <!-- Handle -->
+    <rect x="90" y="134" width="18" height="16" rx="4" fill="url(#handleGrad)"/>
+    <!-- Handle hole -->
+    <circle cx="99" cy="142" r="3.5" fill="none" stroke="#8B6840" stroke-width="1.5"/>
+  </g>
 
-  <!-- Subtle shadow under tools -->
-  <ellipse cx="100" cy="148" rx="30" ry="4" fill="#8B4513" opacity="0.15"/>
+  <!-- Subtle circular badge outline -->
+  <circle cx="100" cy="100" r="94" stroke="#D4903C" stroke-width="1.5" opacity="0.2" fill="none"/>
 </svg>
