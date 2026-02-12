@@ -555,6 +555,9 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.6rem;
+    background: var(--clr-white);
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
 }
 
 .footer__logo {
